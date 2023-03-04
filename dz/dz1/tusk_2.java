@@ -5,10 +5,10 @@ public class tusk_2
 {
     public static void main(String[] args) throws Exception 
     {
-        boolean flag = true;
-            for (int i = 1; i <= 1000; i++) 
+            for (int i = 2; i <= 1000; i++) 
             {
-                    for(int j = 2; j < i; j++)
+                    boolean flag = true;
+                    for(int j = 2; j < i/2; j++)
                     {
                         if(i % j == 0)
                         {
@@ -16,13 +16,9 @@ public class tusk_2
                             break;
                         } 
                     }        
-                if (flag)
+                if(flag)
                 {
-                    System.out.println(i);
-                } 
-                else
-                {
-                    flag = true;
+                    System.out.print(i + " ");
                 } 
             }         
     }    
